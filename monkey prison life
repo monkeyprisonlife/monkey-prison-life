@@ -1,0 +1,382 @@
+--[[
+
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+
+-- Instances
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local TextButton_8 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
+local TextButton_10 = Instance.new("TextButton")
+
+-- Properties
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0.0901961, 0.0901961, 0.0901961)
+Frame.BorderColor3 = Color3.new(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.339594305, 0, 0.243722305, 0)
+Frame.Size = UDim2.new(0, 508, 0, 389)
+
+UICorner.Parent = Frame
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.new(0.0901961, 0.0901961, 0.0901961)
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 508, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Monkey prison life"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+UICorner_2.Parent = TextLabel
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.new(0.0901961, 0.0901961, 0.0901961)
+ScrollingFrame.BorderColor3 = Color3.new(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 0.128534704, 0)
+ScrollingFrame.Size = UDim2.new(0, 508, 0, 339)
+
+TextButton.Parent = ScrollingFrame
+TextButton.BackgroundColor3 = Color3.new(0.0627451, 0.0627451, 0.0627451)
+TextButton.BorderColor3 = Color3.new(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(0, 140, 0, 83)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Killaura"
+TextButton.TextColor3 = Color3.new(1, 1, 1)
+TextButton.TextScaled = true
+TextButton.TextSize = 14
+TextButton.TextWrapped = true
+
+TextButton_2.Parent = ScrollingFrame
+TextButton_2.BackgroundColor3 = Color3.new(0.0627451, 0.0627451, 0.0627451)
+TextButton_2.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.30905512, 0, 0, 0)
+TextButton_2.Size = UDim2.new(0, 149, 0, 83)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Speed 50"
+TextButton_2.TextColor3 = Color3.new(1, 1, 1)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14
+TextButton_2.TextWrapped = true
+
+TextButton_3.Parent = ScrollingFrame
+TextButton_3.BackgroundColor3 = Color3.new(0.0627451, 0.0627451, 0.0627451)
+TextButton_3.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.620078743, 0, -0.000513577543, 0)
+TextButton_3.Size = UDim2.new(0, 154, 0, 83)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Speed 16"
+TextButton_3.TextColor3 = Color3.new(1, 1, 1)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14
+TextButton_3.TextWrapped = true
+
+TextButton_4.Parent = ScrollingFrame
+TextButton_4.BackgroundColor3 = Color3.new(0.0627451, 0.0627451, 0.0627451)
+TextButton_4.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0, 0, 0.123448372, 0)
+TextButton_4.Size = UDim2.new(0, 140, 0, 83)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Infinite jump"
+TextButton_4.TextColor3 = Color3.new(1, 1, 1)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14
+TextButton_4.TextWrapped = true
+
+TextButton_5.Parent = ScrollingFrame
+TextButton_5.BackgroundColor3 = Color3.new(0.0627451, 0.0627451, 0.0627451)
+TextButton_5.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.30905512, 0, 0.123394899, 0)
+TextButton_5.Size = UDim2.new(0, 149, 0, 83)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Delete fences"
+TextButton_5.TextColor3 = Color3.new(1, 1, 1)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14
+TextButton_5.TextWrapped = true
+
+TextButton_6.Parent = ScrollingFrame
+TextButton_6.BackgroundColor3 = Color3.new(0.0627451, 0.0627451, 0.0627451)
+TextButton_6.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_6.BorderSizePixel = 0
+TextButton_6.Position = UDim2.new(0.620078743, 0, 0.121413328, 0)
+TextButton_6.Size = UDim2.new(0, 154, 0, 83)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "Delete doors"
+TextButton_6.TextColor3 = Color3.new(1, 1, 1)
+TextButton_6.TextScaled = true
+TextButton_6.TextSize = 14
+TextButton_6.TextWrapped = true
+
+TextButton_7.Parent = ScrollingFrame
+TextButton_7.BackgroundColor3 = Color3.new(0.0627451, 0.0627451, 0.0627451)
+TextButton_7.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_7.BorderSizePixel = 0
+TextButton_7.Position = UDim2.new(0, 0, 0.244837761, 0)
+TextButton_7.Size = UDim2.new(0, 140, 0, 83)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = "Teleport to prison"
+TextButton_7.TextColor3 = Color3.new(1, 1, 1)
+TextButton_7.TextScaled = true
+TextButton_7.TextSize = 14
+TextButton_7.TextWrapped = true
+
+TextButton_8.Parent = ScrollingFrame
+TextButton_8.BackgroundColor3 = Color3.new(0.0627451, 0.0627451, 0.0627451)
+TextButton_8.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_8.BorderSizePixel = 0
+TextButton_8.Position = UDim2.new(0.30905512, 0, 0.24023132, 0)
+TextButton_8.Size = UDim2.new(0, 149, 0, 83)
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.Text = "Teleport to yard"
+TextButton_8.TextColor3 = Color3.new(1, 1, 1)
+TextButton_8.TextScaled = true
+TextButton_8.TextSize = 14
+TextButton_8.TextWrapped = true
+
+TextButton_9.Parent = ScrollingFrame
+TextButton_9.BackgroundColor3 = Color3.new(0.0627451, 0.0627451, 0.0627451)
+TextButton_9.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_9.BorderSizePixel = 0
+TextButton_9.Position = UDim2.new(0.620078743, 0, 0.243243545, 0)
+TextButton_9.Size = UDim2.new(0, 154, 0, 83)
+TextButton_9.Font = Enum.Font.SourceSans
+TextButton_9.Text = "Teleport to crim base"
+TextButton_9.TextColor3 = Color3.new(1, 1, 1)
+TextButton_9.TextScaled = true
+TextButton_9.TextSize = 14
+TextButton_9.TextWrapped = true
+
+TextButton_10.Parent = ScrollingFrame
+TextButton_10.BackgroundColor3 = Color3.new(0.0627451, 0.0627451, 0.0627451)
+TextButton_10.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_10.BorderSizePixel = 0
+TextButton_10.Position = UDim2.new(0, 0, 0.361573339, 0)
+TextButton_10.Size = UDim2.new(0, 140, 0, 83)
+TextButton_10.Font = Enum.Font.SourceSans
+TextButton_10.Text = "Teleport to guards room"
+TextButton_10.TextColor3 = Color3.new(1, 1, 1)
+TextButton_10.TextScaled = true
+TextButton_10.TextSize = 14
+TextButton_10.TextWrapped = true
+
+-- Scripts
+
+local function PMDTH_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local textLabel = script.Parent
+	
+	local function getRainbowColor(t)
+		local r = math.sin(t * 2 * math.pi + 0) * 0.5 + 0.5
+		local g = math.sin(t * 2 * math.pi + 2 * math.pi / 3) * 0.5 + 0.5
+		local b = math.sin(t * 2 * math.pi + 4 * math.pi / 3) * 0.5 + 0.5
+		return Color3.new(r, g, b)
+	end
+	
+	local speed = 1
+	local runService = game:GetService("RunService")
+	
+	runService.RenderStepped:Connect(function(deltaTime)
+		local time = tick() * speed % 1
+		textLabel.TextColor3 = getRainbowColor(time)
+	end)
+end
+coroutine.wrap(PMDTH_fake_script)()
+local function PIIWYPB_fake_script() -- Frame.Dragify 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0.5
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+	
+end
+coroutine.wrap(PIIWYPB_fake_script)()
+local function IKPIU_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local player = game.Players.LocalPlayer
+		local replicatedStorage = game:GetService("ReplicatedStorage")
+	
+		local attackRange = 10
+		local killedPlayers = {}
+	
+		while wait(0.000000000000000000000001) do
+			for _, target in pairs(game.Players:GetPlayers()) do
+				if target ~= player and (target.Team and (target.Team.Name == "Inmates" or target.Team.Name == "Criminals" or target.Team.Name == "Guards")) then
+					if target.Character and target.Character:FindFirstChild("HumanoidRootPart") then
+						local distance = (player.Character.HumanoidRootPart.Position - target.Character.HumanoidRootPart.Position).Magnitude
+						if distance <= attackRange then
+							replicatedStorage.meleeEvent:FireServer(target)
+							killedPlayers[target.Name] = true
+						end
+					end
+				end
+			end
+		end		
+	end)
+end
+coroutine.wrap(IKPIU_fake_script)()
+local function BBDPOEI_fake_script() -- TextButton_2.Script 
+	local script = Instance.new('Script', TextButton_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+	end)
+end
+coroutine.wrap(BBDPOEI_fake_script)()
+local function DIEY_fake_script() -- TextButton_3.Script 
+	local script = Instance.new('Script', TextButton_3)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	end)
+end
+coroutine.wrap(DIEY_fake_script)()
+local function AMAPL_fake_script() -- TextButton_4.Script 
+	local script = Instance.new('Script', TextButton_4)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local InfiniteJumpEnabled = true
+		game:GetService("UserInputService").JumpRequest:connect(function()
+			if InfiniteJumpEnabled then
+				game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+			end
+		end)
+	end)
+end
+coroutine.wrap(AMAPL_fake_script)()
+local function GBYXE_fake_script() -- TextButton_5.Script 
+	local script = Instance.new('Script', TextButton_5)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local Prison_Fences = game:GetService("Workspace"):FindFirstChild("Prison_Fences")
+	
+		if Prison_Fences then
+			Prison_Fences:Destroy()
+		end
+	end)
+end
+coroutine.wrap(GBYXE_fake_script)()
+local function JPWOMIL_fake_script() -- TextButton_6.Script 
+	local script = Instance.new('Script', TextButton_6)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local doorsFolder = game:GetService("Workspace"):FindFirstChild("Doors")
+	
+		if doorsFolder then
+			doorsFolder:Destroy()
+		end
+	end)
+end
+coroutine.wrap(JPWOMIL_fake_script)()
+local function RGRCM_fake_script() -- TextButton_7.Script 
+	local script = Instance.new('Script', TextButton_7)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local player = game.Players.LocalPlayer
+		local targetPosition = Vector3.new(826, 99, 2358) 
+	
+		player.Character:MoveTo(targetPosition)
+	end)
+end
+coroutine.wrap(RGRCM_fake_script)()
+local function PHERS_fake_script() -- TextButton_8.Script 
+	local script = Instance.new('Script', TextButton_8)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local player = game.Players.LocalPlayer
+		local targetPosition = Vector3.new(785, 98, 2461) 
+	
+		player.Character:MoveTo(targetPosition)
+	end)
+end
+coroutine.wrap(PHERS_fake_script)()
+local function RPCAGJO_fake_script() -- TextButton_9.Script 
+	local script = Instance.new('Script', TextButton_9)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local player = game.Players.LocalPlayer
+		local targetPosition = Vector3.new(-856, 94, 2059) 
+	
+		player.Character:MoveTo(targetPosition)
+	end)
+end
+coroutine.wrap(RPCAGJO_fake_script)()
+local function XWCC_fake_script() -- TextButton_10.Script 
+	local script = Instance.new('Script', TextButton_10)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local player = game.Players.LocalPlayer
+		local targetPosition = Vector3.new(836, 99, 2266) 
+	
+		player.Character:MoveTo(targetPosition)
+	end)
+end
+coroutine.wrap(XWCC_fake_script)()
